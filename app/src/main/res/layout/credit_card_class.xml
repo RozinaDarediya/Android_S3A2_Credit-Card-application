@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181616">
+
+    <LinearLayout
+        android:id="@+id/balance"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter card balance ($)"
+            android:textColor="#fffefe"
+            android:gravity="left|center"
+            android:textSize="20dp"
+            android:layout_weight="0.95"
+            android:background="#191818" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rate"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/balance"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:text="Enter Yearly Intrest Rate (%)"
+            android:gravity="left|center"
+            android:textSize="20dp"
+            android:textColor="#fcfafa"
+            android:background="#100f0f" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/min_payment"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/rate"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Minimum Payment ($)"
+            android:gravity="left|center"
+            android:textSize="20dp"
+            android:layout_weight="0.85"
+            android:textColor="#fcfafa"
+            android:background="#100f0f" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/final_balance"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_below="@id/min_payment"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final Card Balance ($)"
+            android:gravity="left|center"
+            android:textSize="20dp"
+            android:layout_weight="1.05"
+            android:textColor="#fcfafa"
+            android:background="#100f0f" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/months"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/final_balance"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Months Remaining"
+            android:gravity="left|center"
+            android:textSize="20dp"
+            android:layout_weight="0.94"
+            android:textColor="#fcfafa"
+            android:background="#100f0f" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/intrest"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/months"
+        android:weightSum="1"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Intrest Paid Will Be ($)"
+            android:gravity="left|center"
+            android:layout_weight="0.90"
+            android:textSize="20dp"
+            android:textColor="#fcfafa"
+            android:background="#100f0f" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/compute_salary"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="COMPUTE"
+            android:textColor="#141313"
+            android:background="#fefcfc"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clr"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CLEAR"
+            android:textColor="#111010"
+            android:background="#fefcfc"
+            android:visibility="visible"/>
+    </LinearLayout>
+</LinearLayout>
